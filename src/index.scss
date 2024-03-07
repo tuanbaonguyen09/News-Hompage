@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{ 
+  --primary-orange: hsl(35, 77%, 62%);
+  --primary-red: Soft red: hsl(5, 85%, 63%);
+
+  --neutral-off-white: hsl(36, 100%, 99%);
+  --neutral-greydish-blue: hsl(233, 8%, 79%);
+  --neutral-dark-graydish-blue: hsl(236, 13%, 42%);
+  --neutral-very-dark-blue: hsl(240, 100%, 5%);
+
+  --font-size: 15px;
+  --font-weight-0: 400;
+  --font-weight-1: 700;
+  --font-weight-2: 800;
+  --font-family: "Inter", sans-serif;
+}
+
+
+html, body, #root{ 
+    width: 100%;
+    height: 100%;
+}
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+  }
