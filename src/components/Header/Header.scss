@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav{
+        display: flex;
+        gap: 24px;
+
+        .item{
+            color: var(--neutral-dark-graydish-blue);
+            &:hover{
+                color: var(--neutral-greydish-blue);
+            }
+        }
+    }
+
+
+}

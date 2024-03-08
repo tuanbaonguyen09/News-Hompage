@@ -1,0 +1,20 @@
+#MainNew{
+    img{
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+    }
+    .title{
+        width: 100%;
+        font-size: 48px;
+        font-weight: var(--font-weight-2);
+    }
+    .description{
+        width: 100%;
+        color: var(--neutral-dark-graydish-blue)
+    }
+}

@@ -1,0 +1,21 @@
+#MainNew{
+    grid-area: main;
+}
+#NewsList{
+    grid-area: list;
+}
+#SubLanding{
+    grid-area: sub;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        'main main list'
+        'sub sub sub';
+    gap: 32px;
+}
+body{
+    max-width: 1280px;
+    margin: auto;
+}
