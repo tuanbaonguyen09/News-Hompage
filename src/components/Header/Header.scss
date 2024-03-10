@@ -1,12 +1,14 @@
 header {
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
+    padding: 36px 0px;
+    margin-bottom: -72px;
     nav{
-        display: flex;
-        gap: 24px;
-
+        width: 100%;
+        display: none;
         .item{
             color: var(--neutral-dark-graydish-blue);
             &:hover{
@@ -14,6 +16,12 @@ header {
             }
         }
     }
+    @media (min-width: 376px) {
 
-
+        nav{
+            display: flex;
+            gap: 48px;
+        }
+    }
 }
+

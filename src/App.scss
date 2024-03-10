@@ -7,15 +7,32 @@
 #SubLanding{
     grid-area: sub;
 }
+header{
+    grid-area: header;
+}
 
 main {
-    display: grid;
-    grid-template-areas: 
-        'main main list'
-        'sub sub sub';
-    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+    line-height: 1.8;
+    padding-bottom: 72px;
+    @media (min-width:376px) {
+        display: grid;
+        grid-template-areas: 
+            'header header header'
+            'main main list'
+            'sub sub sub';
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 28px;
+        row-gap: 72px;
+    }
 }
 body{
-    max-width: 1280px;
+    max-width: 345px;
     margin: auto;
+    @media (min-width:376px) {
+        max-width: 1280px;
+        margin: auto;
+    }
 }
