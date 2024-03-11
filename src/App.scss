@@ -7,9 +7,6 @@
 #SubLanding{
     grid-area: sub;
 }
-header{
-    grid-area: header;
-}
 
 main {
     display: flex;
@@ -20,7 +17,6 @@ main {
     @media (min-width:376px) {
         display: grid;
         grid-template-areas: 
-            'header header header'
             'main main list'
             'sub sub sub';
         grid-template-columns: 1fr 1fr 1fr;
@@ -28,7 +24,7 @@ main {
         row-gap: 72px;
     }
 }
-body{
+#root{
     max-width: 345px;
     margin: auto;
     @media (min-width:376px) {

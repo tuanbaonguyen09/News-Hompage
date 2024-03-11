@@ -1,6 +1,13 @@
 import './Header.scss'
 import MainLogo from '../../assets/images/logo.svg'
+import { useState } from 'react'
+import MenuBtn from '../../assets/images/icon-menu.svg'
+import Menu from './Menu'
 const Header = () => {
+    const [menuState, setMenuState] = useState(false)
+    const toggleMenu = () => {
+        setMenuState(!menuState)
+    }
 
     const Nav = [
         "Home",
@@ -26,6 +33,10 @@ const Header = () => {
                     })
                 }
             </nav>
+            <div className='menuBtn' onClick={() => toggleMenu()}>
+                <img src={MenuBtn} alt='mySvgImage' />
+            </div>
+            <Menu nav={Nav} isOpen={menuState} toggleMenu={toggleMenu}/>
         </header>
     )
 }

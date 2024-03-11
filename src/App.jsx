@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
+      <Header/>
       <main>
-        <Header/>
         <MainNew/>
         <NewsList/>
         <SubLanding/>

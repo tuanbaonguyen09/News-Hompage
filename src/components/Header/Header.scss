@@ -1,13 +1,10 @@
 header {
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 36px 0px;
-    margin-bottom: -72px;
     nav{
-        width: 100%;
         display: none;
         .item{
             color: var(--neutral-dark-graydish-blue);
@@ -16,12 +13,61 @@ header {
             }
         }
     }
-    @media (min-width: 376px) {
+    .menuBtn{
+        display: flex;
+    }
 
+
+    @media (min-width: 376px) {
         nav{
             display: flex;
             gap: 48px;
         }
+        .menuBtn{
+            display: none;
+        }
     }
 }
 
+.menu{
+    background-color: var(--neutral-off-white);
+    
+    width: 55%;
+    height: 100%;
+    padding: 24px;
+
+    @media (min-width:376px) {
+        display: none;
+    }
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    right: 0;
+
+    transform: translatex(260px);
+    transition: transform 0.4s ease-in-out;
+
+    &.active{
+        transform: translatex(4px);
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .closeBtn{
+        position: absolute;
+        padding-right: inherit;
+        right: 0;
+    }
+
+    .mobileNav{
+        font-size: 20px;
+        position: absolute;
+        top:15%;
+        left: 0;
+        padding-left: inherit;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
